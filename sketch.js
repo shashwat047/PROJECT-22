@@ -2,7 +2,8 @@ var path,boy,cash,diamonds,jwellery,sword;
 var pathImg,boyImg,cashImg,diamondsImg,jwelleryImg,swordImg;
 var treasureCollection = 0;
 var cashG,diamondsG,jwelleryG,swordGroup;
-
+var gameover
+var gameOVER
 //Game States
 var PLAY=1;
 var END=0;
@@ -16,6 +17,7 @@ function preload(){
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
  //write a code to load the image named gameOver.png
+ gameover = loadImage("gameOver.png")
  
 }
 
@@ -88,6 +90,15 @@ function draw() {
         jwelleryG.setVelocityYEach(0);
         swordGroup.setVelocityYEach(0);
 //create a sprite
+gameOVER = createSprite(200,300)
+//width / 2
+
+gameover.addImage (gameover);
+gameOVER.scale = 0.7
+
+
+
+
 //add a animation for gameover
 //scale the gameover image
 
